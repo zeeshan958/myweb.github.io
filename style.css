@@ -1,0 +1,163 @@
+/* CSS default  */
+*{
+    margin: 0px;
+    padding: 0px;
+    
+    }
+    body{
+        background-color: var(--c2);
+    }
+/* Declearing variables */
+:root{
+ --c1:#ffc4eb;
+--c2:#f3eac4;
+--c3:#fdfefd;
+--c3:#0d1010;
+--c4:#abc798;
+}          
+
+/* Nav bar  */
+#Cname{
+font-family: 'Great Vibes', cursive;
+display: flex;
+align-items: center;
+font-size: 45px;
+background-color: var(--c4);
+
+}
+img{
+    height: 145px;
+    width: 200px;
+    background-color: var(--c4);
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    background-color: var(--c4);
+}
+marquee{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    background-color: var(--c1);
+    justify-content: space-evenly;
+    /* width:50vw; */
+    align-items: center;
+    
+}
+ul li{
+    list-style: none;
+    font-size: 1.3rem;
+     border-radius:5px ;
+    
+}
+ul li a{
+    display: block;
+    padding: 4px;
+    /* margin: 4px; */
+    background-color: var(--c1);
+    text-decoration: none;
+    color: var(--c3);
+}
+ul li a:hover{
+    background-color: var(--c4);
+    border-radius: 10px;
+}
+
+/* Home CSS */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('img/istockphoto-1249206105-170667a.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 50vh;
+}
+.home h2{
+    opacity: 1;
+}
+.home p{
+ font-size: 20px;
+}
+.home::after{
+    content: "";
+    position: absolute;
+    /* z-index: -1; */
+    /* z-index: '-1'; */
+    opacity: 0.5;
+}
+
+/* services */
+.services{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--c4);
+    border-radius: 180px;
+    margin: 10px;
+}
+.items{
+    height: 100px;
+    width: 300px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.items h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 30px;
+}
+#items1{
+    border-right: 2px solid var(--c2);
+}
+#items2{
+    border-right: 2px solid var(--c2);
+}
+
+/* Gallery */
+h1{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;    
+}
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.gallery img{
+    border-radius: 4px;
+    transition: all 2s ease-in-out;
+}
+.gallery img:hover{
+    border-radius: 20px;
+    transform: scale(2);
+}
+
+/* Contactus */
+.contact{
+    background-color: var(--c1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.detail{
+    width: 50%;
+    margin: 5px;
+}
+#message{
+    height: 50px;
+}
